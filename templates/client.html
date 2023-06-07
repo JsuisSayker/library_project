@@ -1,0 +1,41 @@
+<!doctype.html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>Client</title>
+    <link rel='stylesheet' href='/static/style.css'>
+    <link rel="icon" type="image/x-icon" href="/static/iconbib.png">
+
+  </head>
+
+  <body>
+    <h1>Client</h1>
+    <br>
+    <form action="/name.html" method="POST">
+  {% if  books_taken == [] %}
+    {% for livre in all_books %}
+      <input type="checkbox" name="reservation" value="{{livre[0]}}"
+      <div class="flash">{{livre[0]}}, {{livre[1]}}</div>
+      <br>
+    {% endfor %}
+  {% else %}
+    {% for livre in books_not_taken %}
+      <input type="checkbox" name="reservation" value="{{livre[0]}}"
+      <div class="flash">{{livre[0]}},{{livre[1]}}</div>
+      <br>
+    {% endfor %}
+  {% endif %}
+  {% for livre in books_taken %}
+    <div style="float: right">
+    <div class="flash">{{livre[0]}}</div></div>
+    <br>
+  {% endfor %}
+  {% for date in client_pov %}
+    <div style="float: right">
+    <div class="flash">{{date[1]}}</div></div>
+    <br>
+  {% endfor %}
+  <input type ='submit' class='button_petit' value= "Réserver"></input>
+    </form>
+  </body>
+</html>

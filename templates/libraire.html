@@ -1,0 +1,28 @@
+<!doctype.html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>Libraire</title>
+    <link rel='stylesheet' href='/static/style_lib.css'>
+    <link rel="icon" type="image/x-icon" href="/static/iconbib.png">
+
+  </head>
+
+  <body>
+    <h1>Libraire</h1>
+    <br>
+    {%if libraire_emprunt == []%}
+      <p>Il n'y a aucune réservation pour le moment</p>
+    {%endif%}
+    {%for client in libraire_client%}
+    <p>Emprunté par :{{client[0]}}</p>
+      {%for emprunt in libraire_emprunt%}
+       <p>{{emprunt[0]}}</p>
+        {% for date in libraire_date%}
+          <p>Emprunté le {{date[0]}}, à rendre le {{date[1]}}</p>
+        {%endfor%}
+      {%endfor%}
+    {%endfor%}
+    <a class='button' href='/'><strong>Page d'acceuil</strong></a></center>
+  </body>
+</html>

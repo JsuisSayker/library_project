@@ -1,0 +1,58 @@
+h1
+{
+    color:black;
+    font-size:50px;
+    text-align:center;
+}
+
+p
+{
+    color:black;
+    font-family:verdana;
+    font-size:25px;
+    text-align:justify;
+    
+}
+
+.container {
+  justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left | right ... + safe | unsafe;
+}
+
+.button
+{
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px;
+    width: 300px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 20px 450px;
+    border-radius: 2rem;
+}
+
+.button strong
+{
+    font-size: 1.5rem;
+}
+
+.background-image{
+ background-image : url("biblio.png");
+}
+
+.button_petit
+{
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 20px 50px;
+    border-radius: 2rem;
+}

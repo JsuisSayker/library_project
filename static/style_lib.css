@@ -1,0 +1,28 @@
+p
+{
+    color:black;
+    font-family:verdana;
+    font-size:12px;
+    text-align:justify;
+    
+}
+
+.button
+{
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px;
+    width: 300px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 20px 450px;
+    border-radius: 2rem;
+}
+
+.button strong
+{
+    font-size: 1.5rem;
+}
